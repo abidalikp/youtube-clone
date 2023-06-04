@@ -16,14 +16,14 @@ const Searchbar = () => {
           </div>
         )}
         <input
-          className="bg-inherit outline-none "
+          className="outline-none bg-inherit "
           type="text"
           placeholder="Search"
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
         />
       </div>
-      <div className="flex py-2 px-4 bg-stone-800 border border-l-0 border-stone-700 rounded-r-full">
+      <div className="flex px-4 py-2 border border-l-0 rounded-r-full cursor-pointer bg-stone-800 border-stone-700">
         <SearchIcon />
       </div>
     </div>

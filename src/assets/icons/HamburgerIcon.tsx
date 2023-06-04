@@ -3,7 +3,7 @@ import { SVGProps } from ".";
 const HamburgerIcon = ({
   height = 24,
   width = 24,
-  color = "white",
+  color = "currentColor",
 }: SVGProps) => {
   return (
     <svg
