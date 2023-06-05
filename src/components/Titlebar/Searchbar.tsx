@@ -16,7 +16,7 @@ const Searchbar = () => {
           </div>
         )}
         <input
-          className="outline-none bg-inherit "
+          className="w-[540px] outline-none bg-inherit"
           type="text"
           placeholder="Search"
           onFocus={() => setIsFocused(true)}

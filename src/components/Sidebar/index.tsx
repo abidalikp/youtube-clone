@@ -6,7 +6,7 @@ interface SidebarProps {
 
 const Sidebar = (props: SidebarProps) => {
   return (
-    <div className="w-[74px]">
+    <div className="bg-stone-950 fixed w-[74px]">
       {props.data?.map((d) => {
         return <Button {...d} />;
       })}

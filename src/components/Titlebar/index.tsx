@@ -8,7 +8,7 @@ import Searchbar from "./Searchbar";
 
 const Titlebar = () => {
   return (
-    <div className="flex items-center justify-between py-2 pr-4">
+    <div className="fixed flex items-center justify-between w-full py-2 pr-4 h-14 bg-stone-950">
       <div className="flex items-center gap-1">
         <div className="flex items-center justify-center w-[74px]">
           <Icon>
@@ -35,7 +35,7 @@ const Titlebar = () => {
         </Icon>
         <img
           className="w-8 h-8 mx-2 rounded-full cursor-pointer"
-          src="https://source.unsplash.com/featured/1x1"
+          src="https://source.unsplash.com/featured/human"
           alt=""
         />
       </div>
