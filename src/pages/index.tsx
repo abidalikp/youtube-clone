@@ -20,9 +20,9 @@ const Main = () => {
             { icon: <LibraryIcon />, label: "Library" },
           ]}
         />
-        <div className="flex flex-col ml-[74px] px-6 overflow-hidden">
+        <div className="flex flex-col md:ml-[74px] px-6 overflow-hidden w-full">
           <LabelHeader />
-          <div className="pt-4 mt-14">
+          <div className="pt-4 mt-14 w-full">
             <Home />
           </div>
         </div>
