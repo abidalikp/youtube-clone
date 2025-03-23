@@ -9,8 +9,8 @@ const LabelButton = (props: LabelButtonProps) => {
     <div
       className={` capitalize px-4 py-1.5 text-sm rounded-lg  cursor-pointer font-medium ${
         props.selected
-          ? "bg-stone-100 text-black hover:bg-white"
-          : "bg-stone-700 hover:bg-stone-600"
+          ? "bg-primary-3 text-secondary hover:bg-primary-2"
+          : "bg-secondary-3 hover:bg-secondary-4"
       }`}
       onClick={props.onClick}
     >

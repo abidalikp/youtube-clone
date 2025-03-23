@@ -5,7 +5,10 @@ export interface ButtonProps {
 
 const Icon = (props: ButtonProps) => {
   return (
-    <div className="p-2 rounded-full cursor-pointer hover:bg-stone-900">
+    <div
+      onClick={props?.onClick}
+      className="p-2 rounded-full cursor-pointer hover:bg-secondary-2"
+    >
       {props.children}
     </div>
   );

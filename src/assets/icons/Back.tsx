@@ -1,12 +1,12 @@
 import { SVGProps } from ".";
 
-const BackIcon = (props: SVGProps) => (
+const BackIcon = ({ width = 20, height = 20 }: SVGProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
-    fill="white"
-    width={20}
-    height={20}
+    fill={"var(--primary)"}
+    width={width}
+    height={height}
   >
     <path
       fillRule="evenodd"

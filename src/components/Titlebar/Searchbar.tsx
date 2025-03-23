@@ -7,7 +7,7 @@ const Searchbar = () => {
     <div className="flex items-center w-full max-w-[600px] md:ml-4">
       <div
         className={`flex items-center gap-2 w-full border ${
-          isFocused ? "border-blue-400" : "border-stone-700"
+          isFocused ? "border-blue-400" : "border-secondary-4"
         } rounded-l-full py-2 px-4`}
       >
         {isFocused && (
@@ -16,14 +16,14 @@ const Searchbar = () => {
           </div>
         )}
         <input
-          className="flex-grow outline-none bg-inherit"
+          className="flex-grow outline-none bg-inherit text-primary"
           type="text"
           placeholder="Search"
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
         />
       </div>
-      <div className="px-4 py-2 border border-l-0 rounded-r-full cursor-pointer flex bg-stone-800 border-stone-700">
+      <div className="px-4 py-2 border border-l-0 rounded-r-full cursor-pointer flex bg-secondary border-secondary-4">
         <SearchIcon />
       </div>
     </div>

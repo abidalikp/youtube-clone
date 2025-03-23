@@ -22,12 +22,12 @@ const Thumbnail = (props: ThumbnailProps) => {
         className="cover rounded-lg h-[180px] w-full"
         alt=""
         /> */}
-      <div className="flex items-center justify-center border border-stone-800 rounded-lg h-[180px] bg-stone-900 w-full">
+      <div className="flex items-center justify-center border border-secondary-3 rounded-lg h-[180px] bg-secondary-2 w-full">
         {props.title?.split?.(" ")?.slice?.(0, 2)?.join?.(" ")}
       </div>
       <div className="flex gap-2 py-4">
         {/* <img className="w-8 h-8 rounded-full" src={props.channel?.img} alt="" /> */}
-        <div className="w-8 h-8 rounded-full font-bold flex items-center justify-center bg-stone-900">
+        <div className="shrink-0 w-8 h-8 rounded-full font-bold flex items-center justify-center bg-secondary-2 border-secondary-3 border">
           {props.channel?.name
             ?.split?.(" ")
             ?.map((w) => w[0])
@@ -36,7 +36,7 @@ const Thumbnail = (props: ThumbnailProps) => {
         </div>
         <div className="flex flex-col gap-1">
           <div className="font-bold line-clamp-2">{props.title}</div>
-          <div className="text-sm text-stone-400">
+          <div className="text-sm text-primary-5">
             <span className="flex items-center gap-1">
               {props.channel?.name}{" "}
               {props.channel?.verified && (

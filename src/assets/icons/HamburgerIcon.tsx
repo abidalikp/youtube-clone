@@ -3,7 +3,7 @@ import { SVGProps } from ".";
 const HamburgerIcon = ({
   height = 24,
   width = 24,
-  color = "currentColor",
+  color = "var(--primary)",
 }: SVGProps) => {
   return (
     <svg
@@ -15,10 +15,10 @@ const HamburgerIcon = ({
     >
       <path
         fill="none"
-        stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
+        stroke={color}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
         d="M5 8h22M5 16h22M5 24h22"
       />
     </svg>

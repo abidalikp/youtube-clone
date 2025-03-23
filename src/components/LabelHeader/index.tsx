@@ -15,7 +15,7 @@ const labels = [
 const LabelHeader = () => {
   const [selected, setSelected] = useState("all");
   return (
-    <div className="fixed flex w-full overflow-scroll no-scrollbar gap-2 md:gap-3 py-3 pr-8 bg-stone-950">
+    <div className="fixed flex w-full overflow-scroll no-scrollbar gap-2 md:gap-3 py-3 pr-8 bg-secondary">
       {labels.map((label) => (
         <LabelButton
           key={label}
