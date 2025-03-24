@@ -1,10 +1,18 @@
 import { useState } from "react";
 import SearchIcon from "../../assets/icons/SearchIcon";
 
-const Searchbar = () => {
+interface SearchbarProps {
+  showSearchbar: boolean;
+}
+
+const Searchbar = ({ showSearchbar }: SearchbarProps) => {
   const [isFocused, setIsFocused] = useState(false);
   return (
-    <div className="flex items-center w-full max-w-[600px] md:ml-4">
+    <div
+      className={`items-center w-full max-w-[600px] md:ml-4 ${
+        showSearchbar ? "flex" : "hidden sm:flex "
+      }`}
+    >
       <div
         className={`flex items-center gap-2 w-full border ${
           isFocused ? "border-blue-400" : "border-secondary-4"
